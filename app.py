@@ -3,7 +3,7 @@ import yfinance as yf
 from datetime import datetime, timedelta
 import os
 app = Flask(__name__)
-####
+
 @app.route('/api', methods=['POST'])
 def compare_stocks():
     data = request.get_json()
